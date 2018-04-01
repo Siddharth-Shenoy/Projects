@@ -1,0 +1,170 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	font-size: 20px;
+}
+
+nav.navbarfluid
+{
+	width: 100%;
+
+	background-color: #d7d9dd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav.navbarfluid > a
+{
+	color: #5d5e60;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+nav.navbarfluid > a.active	
+{
+	color: #5d5e60;
+	background-color: #edf1f9;
+	text-decoration: none;
+	padding: 11px;
+}
+.tab {  
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #eaf1ff;
+
+}
+
+.tab > nav.tablist { 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid orange;
+}
+.tab > nav.tablist > a#tabbutton{ 
+	color: #5d5e60;
+	padding: 10px;
+	text-decoration: none;
+
+}
+.tab > .tabbody
+{
+	width: 100%;
+}
+/*
+
+padding-left: 10px;
+	padding-right: 10px;
+
+*/
+
+.tab > nav.tablist > a.active{ 
+	color: #5d5e60;
+	background-color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+#tabaccount
+{
+	padding: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+input
+{
+	font-size: 17px;
+}
+button.normal
+{
+	background-color: #5b8ff7;
+	border: 1px solid #5b8ff7;
+	color: white;
+	padding: 7px 30px;
+}
+.newsmainbody
+{
+	padding: 30px;
+}
+section.news
+{
+	background-color: #dee1e5;
+	width: 100%;
+	margin-bottom: 20px;
+}
+section.news > header
+{
+	background-color: #58aafc;
+	color: white;
+	padding: 5px;
+}
+section.news > .newsbody
+{
+	padding: 10px;
+}
+.fluidtable
+{
+	width: 100%;
+}
+.fluidtable > .fluidrow
+{
+	padding: 5px;
+	display: block;
+}
+.fluidtable > .fluidrow >  .fluidcol
+{
+	width: 250px;
+	display: inline-block;
+}
+.mobilemenu
+{
+	text-align: right;
+	padding: 10px;
+	display: none;
+}
+.mobiledisplay
+{
+	display: none;
+}
+.notifybox
+{
+	background-color: orange;
+	padding: 7px;
+	
+}
+@media all and (min-width: 300px) and (max-width: 500px)
+{
+	.mobiledisplay
+	{
+		background-color: grey;
+		color: white;
+		padding-left: 20px;
+		display: block;
+	}
+	nav.navbarfluid > a
+	{
+		padding: 5px;
+		display: block;
+	}
+	.fluidtable > .fluidrow >  .fluidcol
+	{
+		width: 250px;
+		display: block;
+	}
+	.mobilemenu
+	{
+		text-align: right;
+		padding: 10px;
+		display: inline-block;
+	}
+	#dropdown
+	{
+		display: none;
+	}
+	.mobilemenu > .menubar
+	{
+
+		width: 30px;
+		background-color: white;
+	}
+
+}
